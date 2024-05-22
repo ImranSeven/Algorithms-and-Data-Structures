@@ -41,6 +41,32 @@ class Trie:
         # add in the payload
         current.data = data
 
+    def insert_recur(self, key, data=None):
+        current = self.root
+        self.inser_recur_aux(current, key, data)
+    
+    def insert_recur_aux(self, current, key, data=None):
+        # base
+        if len(key) == 0:
+            # what happen when i gone through all of my alpha in key
+            return
+        # recur
+        else:
+            # calculate index
+            # $ = 0, a = 1, b = 2, c =3 ...
+            index = ord(key[0]) - 97 + 1
+            # if path exist
+            if current.link[index] is not None:
+                current = current.link[index]
+            # if path doesn't exist
+            else:
+                # create new node
+                current.link[index] = Node()
+                current = current.link[index]
+                self.insert_recur_aux(current, key[1:], data)
+
+
+
     def search(self, key):
         # begin from root
         current = self.root
