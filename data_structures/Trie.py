@@ -65,8 +65,6 @@ class Trie:
                 current = current.link[index]
                 self.insert_recur_aux(current, key[1:], data)
 
-
-
     def search(self, key):
         # begin from root
         current = self.root
