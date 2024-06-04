@@ -1,2 +1,2 @@
 # Algorithms-and-Data-Structures
- Algorithms and Data Structures I used in Monash University
+ Algorithms and Data Structures I learned and applied in Monash University
