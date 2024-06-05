@@ -1,15 +1,14 @@
 def breadth_first_search(graph, start):
-    def breadth_first_search(graph, start):
-        """
-        Performs a breadth-first search on a graph from a given start node.
+    """
+    Performs a breadth-first search on a graph from a given start node.
 
-        Parameters:
-         - graph (list of list of int): The graph represented as a list, where each index is a node and each element is a list of the node's neighbors.
-         - start (int): The starting node's index for the BFS traversal.
+    Parameters:
+     - graph (list of list of int): The graph represented as a list, where each index is a node and each element is a list of the node's neighbors.
+     - start (int): The starting node's index for the BFS traversal.
 
-        Returns:
-            - None: This function does not return a value but prints the order of traversal.
-        """
+    Returns:
+        - None: This function does not return a value but prints the order of traversal.
+    """
 
      # Initialize a list to keep track of visited nodes, 
     # setting all elements to False indicating that no nodes have been visited yet.
