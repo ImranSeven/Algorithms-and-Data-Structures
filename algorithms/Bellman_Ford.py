@@ -37,15 +37,6 @@ print("Predecessor:", predecessor)
 # Predecessor: {'A': None, 'B': 'C', 'C': 'E', 'D': 'A', 'E': 'B'}
 
 vertices = ['A', 'B', 'C', 'D']
-edges = [('A', 'B', 3), ('A', 'C', 6), ('B', 'C', 1), ('B', 'D', 3), ('C', 'D', 2)]
-source = 'A'
-distance, predecessor = bellman_ford(vertices, edges, source)
-print("Distance:", distance)
-print("Predecessor:", predecessor)
-# Distance: {'A': 0, 'B': 3, 'C': 4, 'D': 6}
-# Predecessor: {'A': None, 'B': 'A', 'C': 'B', 'D': 'C'}
-
-vertices = ['A', 'B', 'C', 'D']
 edges = [('A', 'B', 3), ('B', 'C', 1), ('C', 'D', -10)]
 source = 'A'
 distance, predecessor = bellman_ford(vertices, edges, source)
